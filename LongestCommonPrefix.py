@@ -1,7 +1,7 @@
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         prf = strs[0]
-        prf_len = len(strs)
+        prf_len = len(prf)
         for i in strs[1:]:
             while prf != i[0:prf_len]:
                 prf_len -= 1
